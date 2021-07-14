@@ -1,0 +1,90 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common-design */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* design-headder-section */
+header{
+    background-color: #2D25A0;
+}
+/* align title and banner */
+.banner-sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 156px;
+}
+/* style headline */
+.headline h1{
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 80px;
+}
+/* styleing button anchor */
+.headline a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 5px;
+}
+    /* -----------------------------------
+        start players section styling
+    -------------------------------------- */
+  /* style grid for Players-detail in 3 colomn */
+  .Players-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin: 43px 110px;
+}
+ /* player-box-sizing */
+ .player{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 330px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     margin-top: 27px;
+     padding: 15px;
+     border-radius: 5px;
+ }
+  /* style player name */
+ .player h2{
+     color: #18191F;
+     font-size: 28px;
+     margin-top: 16px;
+ }
+  /* style player details */
+  .player p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-top: 10px;
+  }
+    /* --------------------------------
+        End styling players section
+    ----------------------------------- */
+    /* ----------------------
+        Start styling footer
+       ---------------------- */
+       /* style main footer section */
+    .f-menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* style font awesome social icon */
+    .fab{
+        padding: 7px;
+        font-size: 20px;
+        background: rgba(128, 128, 128, 0.534);
+        border-radius: 50%;
+    }
+    /* -----------------------
+        Start styling footer
+       ----------------------- */
