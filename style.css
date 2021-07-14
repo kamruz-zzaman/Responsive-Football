@@ -306,3 +306,92 @@ header{
                 padding: 5px 5px;
             }
         }
+
+        /* --------------------------------------
+            responsive for tablet device 
+            -------------------------------------*/
+        @media only screen and (min-width: 688px) and (max-width:992px) {
+            body{
+                width: 100%;
+            }
+            .headline{
+                padding: 20px;
+            }
+            .banner{
+                padding: 20px;
+            }
+             nav{
+             display: none;
+             }
+             .Players-detail{
+                 grid-template-columns: repeat(2, 1fr);
+                 justify-content: center;
+                 grid-column-gap: 30px;
+             }
+             .highlight-sec{
+                 flex-direction: column;
+                 margin: 15px;
+             }
+             .h-img{
+                 margin-left: 0; 
+             }
+             .h-img img{
+                 width: 100%;
+                 margin-top: 50px;
+                 padding-left: 0;
+             }
+             .banner-sec {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: start;
+                 margin: 0;
+                 padding: 0;
+                 width: 100%;
+             }
+             .banner img{
+                 width: 100%;
+                 margin-top: 30px;
+             }
+             .lotary-sec{
+                 width: 100%;
+                 height: 500px;
+                 margin: 0px;
+                 margin-bottom: 20px;
+             }
+             .lotary-title{
+                 padding: 20px;
+             }
+             .inputs{
+                 padding: 20px;
+             }
+             .sponser-sec{
+                 display: flex;
+                 flex-direction: column;
+                 height: 600px;
+                 width: 100%;
+                 margin: 0px;
+             }
+             .spons{
+                 border-right: 0;
+                 padding-right: 0;
+             }
+             .f-img img{
+                 width: 100%;
+             }
+             .sponse{
+                 margin-right: 0px;
+             }
+             .office-partner {
+                 margin-left: 0px;
+             }
+             .prince-partner{
+                 margin-left: 20px;
+             }
+             .inputs{
+                 display: flex;
+                 flex-direction: column;
+             }
+             button{
+                 padding: 5px 5px;
+             }
+         }
