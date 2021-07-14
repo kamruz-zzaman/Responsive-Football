@@ -9,12 +9,26 @@ body{
 /* design-headder-section */
 header{
     background-color: #2D25A0;
+    width: 100%;
 }
-/* align title and banner */
-.banner-sec{
+/* navigation menu styling */
+.nav-menu a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+/* navigation menu animating */
+.nav-menu a:hover{
+    color: #E02C6D;
+}
+/* align title and banner and nav */
+.banner-sec , nav{
     display: flex;
     justify-content: space-between;
     margin: 0 156px;
+    padding: 42px 0;
 }
 /* style headline */
 .headline h1{
@@ -23,13 +37,29 @@ header{
     line-height: 80px;
 }
 /* styleing button anchor */
-.headline a{
+.button{
     text-decoration: none;
     font-size: 16px;
     color: #ffffff;
     padding: 10px 24px;
     background-color: #E02C6D;
     border-radius: 5px;
+    transition: 0.5s;
+}
+/* animate button */
+.button:hover{
+    border: 1px solid #E02C6D;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+/* banner image transition */
+.banner img{
+    transition: 1s;
+}
+/* make transform for banner image and player image */
+.banner img:hover ,.player img:hover{
+    transform: scale(1.05);
 }
     /* -----------------------------------
         start players section styling
@@ -45,12 +75,14 @@ header{
  .player{
      display: flex;
      flex-direction: column;
-     justify-content: center;
      width: 330px;
      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
      margin-top: 27px;
      padding: 15px;
      border-radius: 5px;
+ }
+ .player img{
+     transition: 0.5s;
  }
   /* style player name */
  .player h2{
@@ -59,7 +91,7 @@ header{
      margin-top: 16px;
  }
   /* style player details */
-  .player p{
+  .details {
     font-size: 16px;
     line-height: 26px;
     color: #6C6C6C;
@@ -68,6 +100,100 @@ header{
     /* --------------------------------
         End styling players section
     ----------------------------------- */
+        /* --------------------------------
+        Start styling highlight section
+    ----------------------------------- */
+    .highlight-sec{
+        display: flex;
+        margin: 165px 156px 158px 182px;
+    }
+    .h-img{
+        margin-left: 66px;
+    }
+    .h-details{
+        margin-top: 60px;
+    }
+    .h-details h1{
+        color: #0A0826;
+        font-size: 40px;
+        margin: 0;
+    }
+    /* --------------------------------
+        End styling highlight section
+    ----------------------------------- */
+    .sponser-sec{
+        background-color: #10437a;
+        display: flex;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .spons{
+        border-right: 1px solid rgba(53, 46, 46, 0.918);
+        padding-right: 50px;
+    }
+    .sponse{
+        margin-right: 40px;
+    }
+    .office-partner{
+        margin-left: 10%;
+    }
+    .sponser-headline{
+        color: #ffffff;
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    /* ------------------------
+        End-sponser section 
+       ------------------------*/
+    /*---------------------
+       start lotary sec 
+       --------------------*/
+       /* syle lotart headdline */
+    .new-title h1{
+        text-align: center;
+        color: #0A0826;
+        font-size: 2em;
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+    .lotary-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #E02C6D;
+        height: 250px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+    .lotary{
+        color: #ffffff;
+        font-size: 2em;
+    }
+    .input{
+        margin: 10px;
+        padding: 10px 40px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.89);
+        border: 2px solid #E02C6D;
+    }
+    button{
+        padding: 10px 40px;
+        border-radius: 20px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    button:hover{
+        background-color: #10437a;
+    }
+    /*-----------------------------
+     end styling lotary section
+    ------------------------------ */
     /* ----------------------
         Start styling footer
        ---------------------- */
@@ -88,3 +214,60 @@ header{
     /* -----------------------
         Start styling footer
        ----------------------- */
+
+
+       /*------------------------------
+          Start Media query  section
+       ------------------------------ */
+
+       /* for mobile device */
+       @media only screen and (max-width:688px){
+           body{
+               width: 100%;
+           }
+           header,main,footer{
+               /* margin: 10px; */
+           }
+            nav{
+            display: none;
+            }
+            }
+            .Players-detail{
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+            }
+            .highlight-sec{
+                flex-direction: column;
+                margin: 0;
+            }
+            .h-img img{
+                width: 100%;
+                margin-top: 50px;
+                padding-left: 0;
+            }
+            .banner-sec {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .banner img{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .lotary-sec{
+                width: 100%;
+                height: 500px;
+            }
+            .sponser-sec{
+                height: 600px;
+                width: 100%;
+            }
+            .spons{
+                border-right: 0;
+            }
+            .f-img img{
+                width: 100%;
+            }
