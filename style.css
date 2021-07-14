@@ -231,7 +231,6 @@ header{
             nav{
             display: none;
             }
-            }
             .Players-detail{
                 grid-template-columns: repeat(1, 1fr);
                 justify-content: center;
@@ -271,3 +270,4 @@ header{
             .f-img img{
                 width: 100%;
             }
+        }
